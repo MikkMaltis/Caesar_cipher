@@ -10,6 +10,7 @@ for char in list(text):
         print(chars[(chars.index(char) + key) % len(chars)])
     else:
         result.append(char)
+        main()
 
     print(result)
 
@@ -24,6 +25,7 @@ for char in list(text):
         result.append(decrypted_char)
     else:
         result.append(char)
+        main()
 
 decrypted_text = ''.join(result)
 print("Decrypted text:", decrypted_text)
